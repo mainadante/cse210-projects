@@ -10,7 +10,7 @@ class Program
 
         int number = 5;
         number = 9;
-        number = number + 3;
+        number += 3;
         Console.WriteLine($" {number}.");
 
         string color = "Blue";
