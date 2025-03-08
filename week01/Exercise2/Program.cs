@@ -6,41 +6,46 @@ class Program
     {
         Console.WriteLine("Hello World! This is the Exercise2 Project.");
 
+        
         Console.Write("What is your grade porcentage? ");
         string value = Console.ReadLine();
         int grade = int.Parse(value);
 
+        string letter = "";
+
         if (grade >= 90)
         {
-            Console.WriteLine("Your letter grade is A");
+            letter = "A";
 
         }
 
         else if (grade >= 89)
         {
-            Console.WriteLine("Your letter grade is B");
+            letter = "B";
         }
 
         else if (grade >= 79)
         {
-            Console.WriteLine("Your letter grade is C");
+            letter = "C";
         }
 
         else if (grade >= 69)
         {
-            Console.WriteLine("Your letter grade is D");
+            letter = "D";
 
         }
 
         else 
         {
-            Console.WriteLine("Your letter grade is E");
+            letter = "E";
         }
+
+        Console.WriteLine($"Your grade is {letter}");
 
 
         if (grade >= 70)
         {
-            Console.WriteLine("Congratulations, you've passed the course!");
+            Console.WriteLine("Congratulations, you passed the course!");
         }
 
         else
